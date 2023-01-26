@@ -3,5 +3,5 @@
 a=$(ls)
 for i in $a
 do
-	echi "$i"|cut -d "-" -f 2
+	echi "$i" | cut -d "-" -f 2
 done
