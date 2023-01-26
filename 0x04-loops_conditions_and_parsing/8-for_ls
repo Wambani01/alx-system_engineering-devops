@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#using cut command
+a=$(ls)
+for i in $a
+do
+	echo cut -d "-" -f 2 "$i"
+done
