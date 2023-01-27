@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#showing process id of bash processes
+# shellcheck disable=SC2009
+ps -ufx | grep bash
