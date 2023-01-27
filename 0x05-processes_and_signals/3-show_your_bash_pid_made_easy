@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#find process id of bash process
+pgrep -l bash
