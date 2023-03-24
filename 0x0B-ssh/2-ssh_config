@@ -1,0 +1,10 @@
+# Default settings
+Host *
+    ForwardAgent no
+    ForwardX11 no
+    PasswordAuthentication no
+
+# Configuration for connecting to the server
+Host 54.162.93.251
+    User ubuntu
+    IdentityFile ~/.ssh/school
