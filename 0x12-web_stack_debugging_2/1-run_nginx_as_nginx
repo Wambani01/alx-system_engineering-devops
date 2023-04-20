@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
+#Killing ngx and apache2
 
 sudo service nginx stop
 sudo pkill apache2
 
-sudo sed -i 's/#user www-data;/user nginx;/' /etc/nginx/nginx.conf
+sudo sed -i '/^#user www-data/i user nginx;' /etc/nginx/nginx.conf
 
 sudo sed -i 's/listen 80 default_server;/listen 8080 default_server;/' /etc/nginx/sites-available/default
 sudo sed -i 's/listen \[::\]:80/listen \[::\]:8080/' /etc/nginx/sites-available/default
@@ -11,4 +12,3 @@ sudo sed -i 's/listen \[::\]:80/listen \[::\]:8080/' /etc/nginx/sites-available/
 sudo nginx -t
 
 sudo service nginx start
-
