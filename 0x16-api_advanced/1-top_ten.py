@@ -18,4 +18,4 @@ def top_ten(subreddit):
             print(post['data']['title'])
     else:
         print(response.status_code)
-        return 0
+        return None
