@@ -3,6 +3,7 @@
 """retrieve top ten hot topics per subreddit"""
 import requests
 
+
 def top_ten(subreddit):
     """get top ten hot topics"""
 
@@ -18,5 +19,3 @@ def top_ten(subreddit):
     else:
         print(response.status_code)
         return 0
-
-        
